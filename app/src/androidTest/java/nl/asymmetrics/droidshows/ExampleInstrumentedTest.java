@@ -7,16 +7,28 @@ import static androidx.test.espresso.action.ViewActions.typeText;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
 import android.content.Context;
+import android.util.Log;
 
+import androidx.annotation.NonNull;
+import androidx.lifecycle.Lifecycle;
+import androidx.test.core.app.ActivityScenario;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TestRule;
+import org.junit.runner.Description;
 import org.junit.runner.RunWith;
+import org.junit.runners.model.Statement;
 
 import static org.junit.Assert.*;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 import nl.asymmetrics.droidshows.ui.AddSerie;
 
@@ -29,8 +41,7 @@ import nl.asymmetrics.droidshows.ui.AddSerie;
 public class ExampleInstrumentedTest {
 
     @Rule
-    public ActivityScenarioRule<AddSerie> activityScenarioRule = new ActivityScenarioRule<>(AddSerie.class);
-
+    public ActivityScenarioRule<DroidShows> activityScenarioRule = new ActivityScenarioRule<>(DroidShows.class);
 
     @Test
     public void useAppContext() {
@@ -41,6 +52,6 @@ public class ExampleInstrumentedTest {
 
     @Test
     public void testTest() {
-        onView(withId(R.id.add_serie_title)).perform(click());
+        onView(withId(R.id.add_show)).perform(click());
     }
 }
