@@ -27,8 +27,6 @@ public class TestSuite {
     public void addShow() {
         /*
         Description: Add the show "Yellowstone" then delete the show.
-
-        Assertion: None.
         */
     }
 
@@ -37,18 +35,14 @@ public class TestSuite {
         /*
         Description: Add the show "Yellowstone", and mark the 1st episode of the 1st season as watched.
                      Delete the added show at last.
-
-        Assertion: Assert the watched date as today's date.
         */
     }
 
     @Test
     public void addAiredDateToCalendar() {
         /*
-        Description: Add the show "Yellowstone", and add the air date of the 7th episode of the 5th season to the Calendar.
-                     Delete the Calendar event. Return to DroidShows and delete the added show.
-
-        Assertion: Assert the date of the Calendar event as the air date of the episode in DroidShows.
+        Description: Add the show "Yellowstone", and click the air date of the 8th episode of the 5th season to go to the Calendar.
+                     Return to DroidShows and delete the added show.
         */
     }
 }
