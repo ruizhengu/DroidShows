@@ -15,6 +15,10 @@ public class TestSuite {
 
 
     /**
+     * In this experiment, you are provided with brief descriptions and video instructions to implement three test cases.
+     * There are no restrictions on the tools to implement the test cases, you can use both Espresso and UIAutomator.
+     * External resource is allowed(e.g. slides, Google). Unfortunately, AI generation tools(e.g. ChatGPT) are banned.
+     *
      * The application can help you manage TV shows and keep track of the episodes that you have or have not seen.
      * You can also add the air dates of episodes in the calendar.
      *
